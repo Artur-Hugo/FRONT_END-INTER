@@ -41,6 +41,7 @@ export const ButtonContainer = styled.div`
         color: ${({theme}) => theme.colors.secondary};
 
         a{
+            font-family: Roboto, sans-serif;
             font-size: 1rem;
             font-weight: 700;
         }

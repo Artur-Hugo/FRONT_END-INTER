@@ -7,8 +7,16 @@ import background from '../../assets/images/background-login.jpg'
 import logoInter from '../../assets/images/Inter-orange.png'
 import Input from "../../components/Input";
 import Button from "../../components/Button";
-import { Link } from "react-router-dom";
+import { useNavigate,Link } from "react-router-dom";
 const SignIn = () => {
+
+    const navigate = useNavigate()
+    //quando logar vai ir aonde foi redirecionando
+
+    const handleToSignIn = () =>{
+        navigate('/dashbaord');
+    }
+
     return (
         <Wrapper>
             <Background image={background}/>
@@ -20,7 +28,7 @@ const SignIn = () => {
             <Input placeholder="SENHA" type="password"/>
 
             <ButtonContainer>
-                <Button type="button">Entrar</Button>
+                <Button type="button" onClick={handleToSignIn}>Entrar</Button>
                 <p>Ainda não é cadastrado? <Link to="/signup">Cadastra-se Já</Link></p>
             </ButtonContainer>
 

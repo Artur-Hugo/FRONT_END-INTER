@@ -20,7 +20,10 @@ export const InputContainer = styled.div`
       font-weight: 400;
       background: transparent;
       border: 0;
+      outline: 0;
       width: 100%;
       margin: 0 20px;
   }
+
+  
 `
