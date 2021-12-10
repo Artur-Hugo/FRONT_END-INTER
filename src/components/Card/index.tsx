@@ -12,7 +12,7 @@ const Card = ({
     width='100%',
     height='auto',
     noShadow=false,
-}:CardProps) => {
+}: CardProps) => {
 
     return(
         <CardContainer width={width} height={height} noShadow={noShadow}>
@@ -22,4 +22,4 @@ const Card = ({
     
 }
 
-export default Card
+export default Card;
