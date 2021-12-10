@@ -14,7 +14,7 @@ const SignIn = () => {
     //quando logar vai ir aonde foi redirecionando
 
     const handleToSignIn = () =>{
-        navigate('/dashbaord');
+        navigate('/dashboard');
     }
 
     return (
