@@ -1,11 +1,16 @@
 import { Wrapper, Background, InputContainer, ButtonContainer } from "./styles";
+
+import Card from "../../components/Card";
+
 import background from '../../assets/images/background-login.jpg'
 
 const SignIn = () => {
     return (
         <Wrapper>
             <Background image={background}/>
-            SignIn
+            <Card width="403px">
+                teste
+            </Card>
         </Wrapper>
     )
 }
